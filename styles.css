@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+:root {
+  --primaryColor: #0e0e52;
+  --mainLightBlue: #449dd1;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/mountain.jpg");
+  background-position-y: center;
+}
+
+header {
+  margin: 4vh 0;
+  color: white;
+
+  height: 10vh;
+}
+
+main {
+  min-height: 60vh;
+}
+
+/*------------- Nueva Tarea -----------*/
+.newtodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  width: 80%;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid gainsboro;
+  background-color: white;
+  margin: 3vh 0;
+}
+
+.newtodo__input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.newtodo__btn {
+  justify-self: flex-end;
+  height: 100%;
+  width: 15%;
+  border-radius: 0 30px 30px 0;
+  background-color: white;
+  border: 1px solid gainsboro;
+  font-weight: bolder;
+  transition: var(--mainTransition);
+}
+
+.newtodo__btn:hover {
+  background-color: var(--mainLightBlue);
+  color: white;
+  cursor: pointer;
+}
+
+.fa-pencil-alt {
+  margin-left: 13px;
+}
+
+/*------------- Nueva Tarea end-----------*/
+
+/*------------- Tareas-----------*/
+.todos__ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* max-width: 100%; */
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: indianred; */
+  list-style-type: none;
+  gap: 3vh;
+  margin-bottom: 3vh;
+}
+
+.todos__li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+
+.todos__text {
+  font-size: 1.8rem;
+}
+
+.fa-check {
+  font-size: 1.8rem;
+  transition: var(--mainTransition);
+  justify-self: flex-end;
+}
+
+.fa-check:hover {
+  color: green;
+  cursor: pointer;
+}
+/*------------- Tareas End-----------*/
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primaryColor);
+  width: 80vw;
+
+  /* Lo de abajo es el efecto de vidrio ui.glass/generator */
+  backdrop-filter: blur(17px) saturate(180%);
+  -webkit-backdrop-filter: blur(17px) saturate(180%);
+  background-color: rgba(4, 4, 72, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+footer {
+  color: white;
+  opacity: 0.2;
+  width: 100%;
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .layer {
+    width: 100%;
+  }
+  .newtodo {
+    width: 98%;
+  }
+}
