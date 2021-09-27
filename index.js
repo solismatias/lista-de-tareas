@@ -8,11 +8,9 @@ let taskList = ["makako", "chompa", "perro viejo"] //every time we create a new 
 function getInputText() {
     let newTaskText = inputField.value
     taskList = [...taskList, newTaskText]
-    // debugger
-    // console.log(newTaskText.length);
     if (newTaskText.trim() !== "") { // with this I check if the string have text or only white space  
-        // return
         showTasks(newTaskText)
+        inputField.value = "" // clean the input text every time a new task is crated
     }
 }
 
@@ -36,4 +34,9 @@ function newTask() {
 // 
 inputFieldBtn.addEventListener('click', () => {
     newTask()
+})
+inputField.addEventListener('keypress', function (e) { // allow to submit a new task with the Enter key
+    if (e.key === 'Enter') {
+        newTask()
+    }
 })
