@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 :root {
   --primaryColor: #0e0e52;
   --mainLightBlue: #449dd1;
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   justify-content: space-between;
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/mountain.jpg");
   background-position-y: center;
@@ -44,6 +44,7 @@ main {
   border: 1px solid gainsboro;
   background-color: white;
   margin: 3vh 0;
+  margin-bottom: auto;
 }
 
 .newtask__input {
@@ -85,7 +86,7 @@ main {
   justify-content: space-evenly;
   list-style-type: none;
   gap: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: auto;
 }
 
 .tasks__li {
@@ -110,6 +111,11 @@ main {
   color: green;
   cursor: pointer;
 }
+
+.tasks__empty-text {
+  color: white;
+}
+
 /*------------- Tareas End-----------*/
 
 .layer {
