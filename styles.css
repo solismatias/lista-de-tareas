@@ -23,9 +23,8 @@ body {
 }
 
 header {
-  margin: 4vh 0;
+  margin-top: 4vh;
   color: white;
-
   height: 10vh;
 }
 
@@ -34,7 +33,7 @@ main {
 }
 
 /*------------- Nueva Tarea -----------*/
-.newtodo {
+.newtask {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,14 +46,14 @@ main {
   margin: 3vh 0;
 }
 
-.newtodo__input {
+.newtask__input {
   width: 80%;
   height: 100%;
   border: none;
   outline: none;
 }
 
-.newtodo__btn {
+.newtask__btn {
   justify-self: flex-end;
   height: 100%;
   width: 15%;
@@ -65,7 +64,7 @@ main {
   transition: var(--mainTransition);
 }
 
-.newtodo__btn:hover {
+.newtask__btn:hover {
   background-color: var(--mainLightBlue);
   color: white;
   cursor: pointer;
@@ -78,20 +77,18 @@ main {
 /*------------- Nueva Tarea end-----------*/
 
 /*------------- Tareas-----------*/
-.todos__ul {
+.tasks__ul {
   display: flex;
   flex-direction: column;
   width: 90%;
-  /* max-width: 100%; */
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: indianred; */
   list-style-type: none;
   gap: 3vh;
   margin-bottom: 3vh;
 }
 
-.todos__li {
+.tasks__li {
   display: flex;
   align-items: center;
   width: 100%;
@@ -99,7 +96,7 @@ main {
   color: white;
 }
 
-.todos__text {
+.tasks__text {
   font-size: 1.8rem;
 }
 
@@ -120,8 +117,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background-color: var(--primaryColor);
   width: 80vw;
 
   /* Lo de abajo es el efecto de vidrio ui.glass/generator */
@@ -143,7 +138,7 @@ footer {
   .layer {
     width: 100%;
   }
-  .newtodo {
+  .newtask {
     width: 98%;
   }
 }
