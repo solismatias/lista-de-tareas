@@ -21,17 +21,14 @@ body {
     url("./images/mountain.jpg");
   background-position-y: center;
 }
-
 header {
   margin-top: 4vh;
   color: white;
   height: 10vh;
 }
-
 main {
   min-height: 60vh;
 }
-
 /*------------- Nueva Tarea -----------*/
 .newtask {
   display: flex;
@@ -46,14 +43,12 @@ main {
   margin: 3vh 0;
   margin-bottom: auto;
 }
-
 .newtask__input {
   width: 80%;
   height: 100%;
   border: none;
   outline: none;
 }
-
 .newtask__btn {
   justify-self: flex-end;
   height: 100%;
@@ -64,19 +59,15 @@ main {
   font-weight: bolder;
   transition: var(--mainTransition);
 }
-
 .newtask__btn:hover {
   background-color: var(--mainLightBlue);
   color: white;
   cursor: pointer;
 }
-
 .fa-pencil-alt {
   margin-left: 13px;
 }
-
 /*------------- Nueva Tarea end-----------*/
-
 /*------------- Tareas-----------*/
 .tasks__ul {
   display: flex;
@@ -88,7 +79,6 @@ main {
   gap: 3vh;
   margin-bottom: auto;
 }
-
 .tasks__li {
   display: flex;
   align-items: center;
@@ -96,35 +86,28 @@ main {
   justify-content: space-between;
   color: white;
 }
-
 .tasks__text {
   font-size: 1.8rem;
 }
-
 .fa-check {
   font-size: 1.8rem;
   transition: var(--mainTransition);
   justify-self: flex-end;
 }
-
 .fa-check:hover {
   color: green;
   cursor: pointer;
 }
-
 .tasks__empty-text {
   color: white;
 }
-
 /*------------- Tareas End-----------*/
-
 .layer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80vw;
-
   /* Lo de abajo es el efecto de vidrio ui.glass/generator */
   backdrop-filter: blur(17px) saturate(180%);
   -webkit-backdrop-filter: blur(17px) saturate(180%);
@@ -132,14 +115,12 @@ main {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
-
 footer {
   color: white;
   opacity: 0.2;
   width: 100%;
   text-align: end;
 }
-
 @media screen and (max-width: 768px) {
   .layer {
     width: 100%;
