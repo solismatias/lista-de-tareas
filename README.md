@@ -4,4 +4,4 @@ El objetivo de este mini proyectos era hacer una lista de tareas lo mas simple p
 
 **Live Preview** https://solismatias.github.io/lista-de-tareas/
 
-![Imgur](https://imgur.com/cgxGVlR.png)
+<img src="https://imgur.com/cgxGVlR.png" width="400">
